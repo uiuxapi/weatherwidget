@@ -14,9 +14,14 @@ Run `npm run build-lib` The terminal / command prompt will display Building Angu
 ` "build-lib": "ng-packagr -p projects/weather/package.json",`
 
 ## Build and Watch for Changes
-Run `npm run rebuild-lib`  The terminal / command prompt will build the library and watch for changes. The following script tag from package.json is used.
+Run `npm run build-lib-watch`  The terminal / command prompt will build the library and watch for changes. The following script tag from package.json is used.
 
 ` "rebuild-lib": "ng-packagr -p projects/weather/package.json --watch",`
+
+## Publish Lib to Github Package Repository
+Run `build-lib-publish` This will execute the following script to build and publish to the github package repository.
+
+ `"build-lib-publish": "ng build weather && cd dist/weather && npm publish",`
 
 ## Install Packaged Lib
 Run `npm install weather/dist`

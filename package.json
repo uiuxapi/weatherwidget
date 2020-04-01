@@ -8,13 +8,16 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "pack-lib": "cd dist weather && npm pack",
     "build-lib": "ng-packagr -p projects/weather/package.json",
-    "rebuild-lib": "ng-packagr -p projects/weather/package.json --watch",
+    "build-lib-watch": "ng-packagr -p projects/weather/package.json --watch",
     "weatherbuildtar": "ng build weather",
-    "weatherbuildnpm": "ng build weather && cd dist/weather && npm publish",
+    "build-lib-publish": "ng build weather && cd dist/weather && npm publish",
     "lint-weather": "ng lint weather --fix",
     "lint-weathertest": "ng lint weathertest --fix",
-    "lint-all-libs": "npm run lint weather && npm run lint weathertest"
+    "lint-all-libs": "npm run lint weather && npm run lint weathertest",
+    "test-weather": "ng test weather --browsers=ChromeHeadless --watch=false",
+    "test-weather-watch": "ng test weather --browsers=ChromeHeadless --watch"
   },
   "private": false,
   "dependencies": {
