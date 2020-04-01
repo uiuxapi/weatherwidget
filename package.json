@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "weatherbuildtar": "ng build weather",
-    "weatherbuildnpm": "ng build weather && cd dist/weather && npm publish --access=public"
+    "weatherbuildnpm": "ng build weather && cd dist/weather && npm publish"
   },
   "private": false,
   "dependencies": {
@@ -49,10 +49,6 @@
     "tsickle": "^0.37.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/uiuxapi/weatherwidget"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@uiuxapi"
