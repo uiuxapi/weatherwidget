@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
+## Packaging Lib
+Run `npm run build-lib` The terminal / command prompt will display Building Angular Package.
+
+## Install Packaged Lib
+Run `npm install weather/dist`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
