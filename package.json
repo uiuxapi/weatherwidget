@@ -1,5 +1,5 @@
 {
-  "name": "@wgiles011/weatherwidget",
+  "name": "@uiuxapi/weatherwidget",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
@@ -52,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/wgiles011/weatherwidget"
+    "url": "git://github.com/uiuxapi/weatherwidget"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@wgiles011"
+    "registry": "https://npm.pkg.github.com/@uiuxapi"
   }
 }
