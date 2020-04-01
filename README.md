@@ -2,11 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
+## Generating Lib
+Run `ng generate library weather` The Angular-CLI will create a directory called projects and within projects create a libary called weather.
+
+## Public APi
+Inside the projects directory at a couple directories in `projects/weather/src/public-api.ts`, you will find a public-api.ts file which contains the api to our library.
+
 ## Packaging Lib
 Run `npm run build-lib` The terminal / command prompt will display Building Angular Package.
 
 ## Install Packaged Lib
 Run `npm install weather/dist`
+
+## Library Usage
+In the app.module.ts or core.module.ts import the library  `import { WeatherModule } from '@uiuxapi/weather';` and also add the library to the imports array `imports:[ WeatherModule ]`.  The items exported in the public api are now ready for use in the application.
 
 ## Development server
 
