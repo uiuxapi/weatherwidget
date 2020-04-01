@@ -6,10 +6,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng generate library weather` The Angular-CLI will create a directory called projects and within projects create a libary called weather.
 
 ## Public APi
-Inside the projects directory at a couple directories in `projects/weather/src/public-api.ts`, you will find a public-api.ts file which contains the api to our library.
+Inside the projects directory at a couple directories in `projects/weather/src/public-api.ts`, you will find a public-api.ts which marks the location for the public api, where you can add your re-usable angular code.
 
-## Packaging Lib
-Run `npm run build-lib` The terminal / command prompt will display Building Angular Package.
+## Build Lib
+Run `npm run build-lib` The terminal / command prompt will display Building Angular Package. The following script tag from package.json is used.
+
+` "build-lib": "ng-packagr -p projects/weather/package.json",`
+
+## Build and Watch for Changes
+Run `npm run rebuild-lib`  The terminal / command prompt will build the library and watch for changes. The following script tag from package.json is used.
+
+` "rebuild-lib": "ng-packagr -p projects/weather/package.json --watch",`
 
 ## Install Packaged Lib
 Run `npm install weather/dist`
